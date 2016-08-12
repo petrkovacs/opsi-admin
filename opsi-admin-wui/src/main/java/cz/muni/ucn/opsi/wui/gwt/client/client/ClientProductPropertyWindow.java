@@ -435,13 +435,13 @@ public class ClientProductPropertyWindow extends Window {
 			system_language.setProductId(installation.getId());
 			system_language.setPropertyId("system_language");
 			if (win10Lang.getSimpleValue().toString() == "Čeština") {
-				system_keyboard_layout.addValue("0405:00000405;0405:00000409");
+				system_keyboard_layout.addValue("0405:00000405;0409:00000409");
 				system_language.addValue("cs-CZ");
 			} else if (win10Lang.getSimpleValue().toString() == "Angličtina") {
-				system_keyboard_layout.addValue("0409:00000409;0409:00000405");
+				system_keyboard_layout.addValue("0409:00000409;0405:00000405");
 				system_language.addValue("en-US");
 			} else { // default will be czech language
-				system_keyboard_layout.addValue("0405:00000405;0405:00000409");
+				system_keyboard_layout.addValue("0405:00000405;0409:00000409");
 				system_language.addValue("cs-CZ");
 			}
 			
